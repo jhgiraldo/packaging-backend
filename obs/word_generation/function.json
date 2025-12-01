@@ -6,7 +6,8 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "methods": ["post"] 
+      "methods": ["get", "post"],
+      "route": "http_juana_document_creation"
     },
     {
       "type": "http",
