@@ -63,3 +63,4 @@ dist/
 /TestResults
 /tools/NuGet.exe
 tests/
+tests

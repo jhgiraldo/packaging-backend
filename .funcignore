@@ -5,4 +5,3 @@ test
 tests/        
 .venv
 __pycache__
-tests/
