@@ -1,0 +1,109 @@
+{
+  "texto": [
+    {
+      "nombre": "Título 'Ingredientes' en mayúscula inicial y negrita",
+      "tipo": "ingredientes_titulo",
+      "requerido": true
+    },
+    {
+      "nombre": "Alergenos en mayúsculas sostenidas y sin negrita",
+      "tipo": "alergenos",
+      "lista": [
+        "LECHE",
+        "SOJA",
+        "HUEVO",
+        "GLUTEN",
+        "ALMENDRA",
+        "TRIGO",
+        "CACAHUETE",
+        "SÉSAMO"
+      ],
+      "requerido": true
+    },
+    {
+      "nombre": "Porcentaje con espacio antes del %",
+      "tipo": "regex_invalido",
+      "patron": "\\d+\\s*%",
+      "requerido": true
+    },
+    {
+      "nombre": "Formato de peso correcto (g e)",
+      "tipo": "regex_valido",
+      "patron": "\\b\\d+\\s*[gG]\\s*[eE]\\b",
+      "requerido": true
+    },
+    {
+      "nombre": "Etiqueta contiene 'Ingredientes:' correctamente",
+      "tipo": "texto",
+      "patron": "Ingredientes",
+      "requerido": true
+    },
+    {
+      "nombre": "Email correcto según marca",
+      "tipo": "texto_condicional",
+      "condiciones": [
+        {
+          "marca": "EL CORTE INGLES",
+          "patron": "clientes\\.supermercado@elcorteingles\\.es"
+        },
+        {
+          "marca": "HIPERCOR",
+          "patron": "atencioncliente@hipercor\\.es"
+        },
+        {
+          "marca": "COLOMA",
+          "patron": "cliente@colomagarcia.com\\.es"
+        }
+      ],
+      "requerido": true
+    }
+  ],
+
+  "visual": [
+    {
+      "nombre": "Debe existir pictograma de reciclaje o compostaje",
+      "tipo": "template_match",
+      "templates": [
+        "templates/reciclaje_azul.png",
+        "templates/reciclaje_amarillo.png",
+        "templates/reciclaje_verde.png",
+        "templates/composta_marron.png"
+      ],
+      "umbral": 0.3,
+      "requerido": true
+    },
+    {
+      "nombre": "No debe existir pictograma 'Punto Verde'",
+      "tipo": "template_prohibido",
+      "template": "templates/punto_verde.png",
+      "umbral": 0.2,
+      "requerido": true
+    },
+    {
+      "nombre": "No debe existir pictograma 'Sin Gluten'",
+      "tipo": "template_prohibido",
+      "template": "templates/sin_gluten.png",
+      "umbral": 0.2,
+      "requerido": true
+    },
+    {
+      "nombre": "Debe contener texto 'Sugerencia de presentación' en alguno de los tres idiomas",
+      "tipo": "ocr_text",
+      "patrones": [
+        "SUGERENCIA DE PRESENTACIÓN",
+        "SUGESTÃO DE APRESENTAÇÃO",
+        "SERVING SUGGESTION"
+      ],
+      "requerido": true
+    }
+  ],
+
+  "idiomas": [
+    {
+      "nombre": "Etiqueta multilingüe (es, pt, en)",
+      "tipo": "idiomas_manual",
+      "min_idiomas": 3,
+      "requerido": true
+    }
+  ]
+}

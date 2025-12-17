@@ -1,0 +1,65 @@
+# -------------------
+# PYTHON (Entornos Virtuales y Compilados)
+# -------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.python_packages/
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.log
+
+# -------------------
+# AZURE FUNCTIONS & SECRETOS (¡CRÍTICO!)
+# -------------------
+# Nunca subir claves al repo
+local.settings.json
+appsettings.json
+.secrets/
+secrets/
+
+# -------------------
+# ARTEFACTOS DE AZURE (Simulador local)
+# -------------------
+# Archivos temporales del emulador de Storage (Azurite)
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+
+# -------------------
+# BASURA DE IDE / EDITOR
+# -------------------
+.vscode/
+.vs/
+*.user
+*.suo
+*.cscfg
+*.Cache
+project.lock.json
+
+# -------------------
+# BASURA DE SISTEMA OPERATIVO
+# -------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# -------------------
+# OTROS (NodeJS, C# legacy, etc)
+# -------------------
+bin/
+obj/
+csx/
+edge/
+Publish/
+node_modules/
+dist/
+/packages
+/TestResults
+/tools/NuGet.exe
+tests/

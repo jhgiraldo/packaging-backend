@@ -1,0 +1,72 @@
+{
+    "archivo": "Cajas Piedra Coloma Garcia 2024.pdf",
+    "estado_general": "Rechazado",
+    "resultados": [
+        {
+            "categoria": "Texto",
+            "regla": "Título 'Ingredientes' en mayúscula inicial y negrita",
+            "cumple": false,
+            "evidencia": "No encontrado"
+        },
+        {
+            "categoria": "Texto",
+            "regla": "Alergenos en mayúsculas sostenidas y sin negrita",
+            "cumple": false,
+            "evidencia": "Correctos: [] | Incorrectos: []"
+        },
+        {
+            "categoria": "Texto",
+            "regla": "Porcentaje con espacio antes del %",
+            "cumple": true,
+            "evidencia": "Ninguno"
+        },
+        {
+            "categoria": "Texto",
+            "regla": "Formato de peso correcto (g e)",
+            "cumple": false,
+            "evidencia": "Falta patrón"
+        },
+        {
+            "categoria": "Texto",
+            "regla": "Etiqueta contiene 'Ingredientes:' correctamente",
+            "cumple": false,
+            "evidencia": "Texto ausente"
+        },
+        {
+            "categoria": "Texto",
+            "regla": "Email correcto según marca",
+            "cumple": true,
+            "evidencia": "N/A"
+        },
+        {
+            "categoria": "Visual",
+            "regla": "Debe existir pictograma de reciclaje o compostaje",
+            "cumple": false,
+            "evidencia": "No evaluado"
+        },
+        {
+            "categoria": "Visual",
+            "regla": "No debe existir pictograma 'Punto Verde'",
+            "cumple": false,
+            "evidencia": "Template no encontrado en assets: templates/punto_verde.png"
+        },
+        {
+            "categoria": "Visual",
+            "regla": "No debe existir pictograma 'Sin Gluten'",
+            "cumple": false,
+            "evidencia": "Template no encontrado en assets: templates/sin_gluten.png"
+        },
+        {
+            "categoria": "Visual",
+            "regla": "Debe contener texto 'Sugerencia de presentación' en alguno de los tres idiomas",
+            "cumple": false,
+            "evidencia": "Leído: PRODUCTOS E. M. 11780 A MANGIAREOSTRNON NA GARDA A..."
+        },
+        {
+            "categoria": "Idiomas",
+            "regla": "Etiqueta multilingüe (es, pt, en)",
+            "cumple": false,
+            "evidencia": "[]"
+        }
+    ]
+}

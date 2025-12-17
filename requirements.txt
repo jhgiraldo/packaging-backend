@@ -1,0 +1,14 @@
+azure-functions
+azure-storage-blob
+pymupdf
+opencv-python-headless
+numpy
+Pillow
+langdetect
+msrest
+azure-cognitiveservices-vision-computervision
+python-docx
+python-pptx
+matplotlib
+pandas
+openpyxl
